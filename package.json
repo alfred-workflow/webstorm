@@ -1,6 +1,6 @@
 {
     "name": "@alfred-workflows/webstorm",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Alfred workflow for WebStorm",
     "main": "dist/index.js",
     "scripts": {
@@ -10,7 +10,9 @@
     "files": [
         "dist",
         "README.md",
-        "docs"
+        "docs",
+        "icon.png",
+        "info.plist"
     ],
     "repository": "alfred-workflow/webstorm",
     "keywords": [
@@ -19,8 +21,7 @@
     "author": "Wang Liang <850598163@qq.com>",
     "license": "ISC",
     "dependencies": {
-        "@alfred-workflows/core": "^1.0.4",
-        "@rollup/plugin-node-resolve": "^15.0.1"
+        "@alfred-workflows/core": "^1.0.4"
     },
     "devDependencies": {
         "@liangshen/jetbrains": "^1.0.6",
@@ -32,6 +33,8 @@
         "ts-jest": "^29.0.5",
         "ts-node": "^10.9.1",
         "tslib": "^2.5.0",
-        "typescript": "^4.7.4"
+        "typescript": "^4.7.4",
+        "@rollup/plugin-commonjs": "^24.0.1",
+        "@rollup/plugin-node-resolve": "^15.0.1"
     }
 }

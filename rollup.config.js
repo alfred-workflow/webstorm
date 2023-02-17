@@ -1,5 +1,5 @@
 import resolve from '@rollup/plugin-node-resolve';
-// import commonjs from '@rollup/plugin-commonjs';
+import commonjs from '@rollup/plugin-commonjs';
 import pkg from './package.json';
 import typescript from '@rollup/plugin-typescript';
 
@@ -12,7 +12,7 @@ export default [
     // `file` and `format` for each target)
     {
         input: './src/index.ts',
-        plugins: [typescript(), resolve()],
+        plugins: [typescript(), commonjs(), resolve()],
         output: [
             {file: pkg.main, format: 'cjs'},
         ]
